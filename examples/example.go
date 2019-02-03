@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/verseatile/fsm"
+	fsm "github.com/verseatile/conway"
 )
 
 const API_KEY = ""
