@@ -16,18 +16,18 @@ go get github.com/verseatile/conway
 ```
 
 ```go
-    // create a new state machine
-	machine := fsm.NewMachine()
-	// create a state instance, a default one is already initialized if not
-	s := &fsm.State{
-		State: make(map[string]interface{}, 0)}
+// create a new state machine
+machine := fsm.NewMachine()
+// create a state instance, a default one is already initialized if not
+s := &fsm.State{
+    State: make(map[string]interface{}, 0)}
 
-	// Set the state machine's state to the one you just created
-    machine.SetCurrent(s)
-    
-    // set state property
-    machine.SetState("hello", "world")
+// Set the state machine's state to the one you just created
+machine.SetCurrent(s)
 
-    fmt.Println(machine.GetState("hello"))
+// set state property
+machine.SetState("hello", "world")
+
+fmt.Println(machine.GetState("hello"))
 
 ```
