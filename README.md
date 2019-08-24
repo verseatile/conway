@@ -1,6 +1,6 @@
+# conway
 ![alt text](https://github.com/verseatile/conway/blob/master/conway.png?raw=true "Conway")
 
-# conway
 a small finite state machine written in Go
 
 >I mean the plan is simple...store some state, swap them out and do whatever with them. Can only go up from here
@@ -30,6 +30,6 @@ machine.SetCurrent(s)
 // set state property
 machine.SetState("hello", "world")
 
-fmt.Println(machine.GetState("hello"))
+fmt.Println(machine.GetState("hello")) // "world"
 
 ```
