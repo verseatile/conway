@@ -1,3 +1,5 @@
+![alt text](https://github.com/verseatile/conway/blob/master/conway.png?raw=true "Conway")
+
 # conway
 a small finite state machine written in Go
 
