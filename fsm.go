@@ -41,9 +41,9 @@ func (m *Machine) SetCurrent(s *State) {
 }
 
 func (m *Machine) SetState(prop string, value interface{}) {
-	m.current.State.RLock()
+	m.current.RLock()
 	m.current.State[prop] = value
-	m.current.State.RUnlock()
+	m.current.RUnlock()
 }
 
 func (m *Machine) GetState(prop string) interface{} {
